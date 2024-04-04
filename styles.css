@@ -1,8 +1,22 @@
 /* Section 1
 Top title header and design with images of literature greats*/
 
-/* Puts top poet images in flexbox, row, creates double shadow effect for depth*/
+/* Style for the Title header */
+#great {
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+    text-transform: uppercase;
+    color: #eeeeee;
+    text-shadow: 
+        .5px -.5px 0 #000, 
+        -1px 2px 1px #666,
+        1px 1px 15px #ece9e5, 
+        0 0 35px #b6b3ae;
+    font-size: 35px;
+}
 
+
+/* Puts top poet images in flexbox, row, creates double shadow effect for depth*/
 .poet-images {
     display: flex;
     flex-direction: row;
