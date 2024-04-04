@@ -1,0 +1,25 @@
+/* Section 1
+Top title header and design with images of literature greats*/
+
+/* Puts top poet images in flexbox, row, creates double shadow effect for depth*/
+
+.poet-images {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.poet-images img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 50%;
+    background-color: white;
+    /* hor.offset, vert.offset, blur, spread, rgba*/
+    box-shadow: 30px 30px 100px 50px rgba(0, 0, 0, 0.2), 30px 30px 30px 10px rgba(0, 0, 0, 0.3);
+    transition: 2s ease;
+}
+
+.poet-images img:hover {
+    transform: rotate(15deg);
+}
