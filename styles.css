@@ -15,7 +15,6 @@ Top title header and design with images of literature greats*/
     font-size: 35px;
 }
 
-
 /* Puts top poet images in flexbox, row, creates double shadow effect for depth*/
 .poet-images {
     display: flex;
@@ -36,4 +35,17 @@ Top title header and design with images of literature greats*/
 
 .poet-images img:hover {
     transform: rotate(15deg);
+}
+
+
+/* Bottom section, footnote Tricky Link */
+.link-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.footer-link {
+    margin-top: auto;
+    text-align: center;
 }
