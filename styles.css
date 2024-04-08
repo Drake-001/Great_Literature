@@ -8,9 +8,11 @@ body {
 
 
 /* Style for the Title header */
-#great {
-    display: flex;
-    flex-direction: row;
+.text-style {
+    margin-top: 75px;
+}
+
+.text-style span {
     text-align: center;
     font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
     text-transform: uppercase;
@@ -21,7 +23,16 @@ body {
         1px 1px 15px #ece9e5, 
         0 0 35px #b6b3ae;
     font-size: clamp(16px, 2vw, 45px);
-    margin-top: 55px; 
+}
+
+.text-style span:hover {
+    text-shadow: 
+        .5px -.5px 5px #000, 
+        -1px 2px 5px #666,
+        1px 1px 15px #ece9e5, 
+        0 0 35px #b6b3ae,
+        30px 30px 100px  #000, 
+        30px 30px 30px #000;
 }
 
 /* Puts top poet images in flexbox, row, creates double shadow effect for depth*/
@@ -54,7 +65,13 @@ body {
 }
 
 /* Buttons for poet images */
+.image-button {
+    transition: all 0.1s ease;
+}
 
+.image-button:active {
+    transform: scale(0.97);
+}
 
 /* Flex layout of poet words, columns */
 .row {
